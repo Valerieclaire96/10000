@@ -58,7 +58,16 @@ const diceSlice = createSlice({
     resetRollTrigger: (state) => {
       state.rollTrigger = false;
     },
-    setGameStarted: (state, action) => {
+    setRollDiceCount: (state) => {
+      console.log("you ran me")
+    },
+    setRollOffValue: (state) => {
+      console.log("you ran me")
+    },
+    clearRollTrigger: (state) => {
+      console.log("you ran me")
+    },
+    setRollDiceCount: (state, action) => {
       state.gameStarted = action.payload;
     },
   },
@@ -73,6 +82,9 @@ export const {
   switchPlayer,
   triggerRoll,
   resetRollTrigger,
+  setRollDiceCount,
+  clearRollTrigger,
+  setRollOffValue,
   setGameStarted,
 } = diceSlice.actions;
 
